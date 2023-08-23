@@ -20,8 +20,8 @@ def hbtnb():
 
 @app.route('/c/<text>', strict_slashes=False)
 def hbtnb1(text):
-    """function that display C followed by text's value"""
-    return("C {}".format(text))
+    """function that display C followed by text's"""
+    return("C {}".format(text.replace("_", " ")))
     
     
 
