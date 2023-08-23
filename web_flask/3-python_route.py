@@ -24,8 +24,10 @@ def hbtnb1(text):
     return("C {}".format(text.replace("_", " ")))
 
 
+@app.route('/python/', strict_slashes=False, defaults={'text': 'is cool'})
 @app.route('/python/<text>', strict_slashes=False)
-def hbtnb1(text="is cool"):
+
+def hbtnb2(text="is cool"):
     """function that display C followed by text's"""
     return("Python {}".format(text.replace("_", " ")))
 
