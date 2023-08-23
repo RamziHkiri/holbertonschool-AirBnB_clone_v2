@@ -22,8 +22,7 @@ def hbtnb():
 def hbtnb1(text):
     """function that display C followed by text's"""
     return("C {}".format(text.replace("_", " ")))
-    
-    
+
 
 
 if __name__ == '__main__':
