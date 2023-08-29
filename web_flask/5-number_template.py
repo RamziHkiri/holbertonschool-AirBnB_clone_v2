@@ -39,7 +39,7 @@ def hbtnb3(n):
 
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
-def hbnb_5(n):
+def hbnb5(n):
     """ Function that displays HTML page """
     return(render_template('5-number.html', n=n))
 
